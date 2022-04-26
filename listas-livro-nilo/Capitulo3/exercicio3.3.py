@@ -7,4 +7,5 @@ not c     False             c or a    True
 not b     True              c or b    True
 not a     False             c or c    True
 a and b   False             b or b    False
-b and c   False"""
+b and c   False
+"""
