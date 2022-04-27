@@ -37,7 +37,7 @@ print(f"Resp 5: {aluna.symmetric_difference(letras_aleatorias)}")
 print(f"Resp 6: {'a' in aluna}")
 
 # Pergunta 7: `letras_aleatorias` é um subconjunto de `aluna` ? 
-print(f"Resp 6: {letras_aleatorias.issubset(aluna)}")
+print(f"Resp 7: {letras_aleatorias.issubset(aluna)}")
 
 # pensou em conjunto, comparações, pensou em sets!!!
 

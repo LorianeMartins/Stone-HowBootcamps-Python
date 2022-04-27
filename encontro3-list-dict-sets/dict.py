@@ -6,7 +6,6 @@
 
 from tabnanny import check
 
-
 sigla_estado = {"SP" : "São Paulo", "MG" : "Minas Gerais"}
 print(f"\nDicionário inicial : {sigla_estado}")
 
