@@ -3,8 +3,6 @@ from random import randint, seed
 
 LETRAS = ("B", "I", "N", "G", "O")
 
-# Travando a aleatoriedade 
-seed(1)
 
 def min_max(letra: str) -> tuple[int]:
     """Gera o valor mínimo e máximo para letra dada.
@@ -90,3 +88,26 @@ def verifica_numero_sorteado(cartela: defaultdict, letra: str, numero: int):
         return True
     print("Você errou um número!")
     return False
+
+# Passo 3: 
+def verifica_cartela(cartela: defaultdict):
+
+    for linha in range(5): 
+
+        lista_numeros = [lista[linha] for lista in cartela.values()]
+
+        if lista_numeros.count("**") == len(lista_numeros):
+            print(f"A linha {linha + 1} da cartela foi totalmente preenchida! BINGO!")
+        
+
+    for letra in cartela: 
+
+        if cartela[letra].count("**") == len(cartela[letra]):
+            print(f"\nA coluna {letra} da cartela foi totalmente preenchida! BINGO!")
+        
+            
+    
+
+        
+
+

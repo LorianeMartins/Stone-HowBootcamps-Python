@@ -32,18 +32,32 @@ Passo número desafio:
     * O número máximo de sorteios para que a cartela seja vencedora
 """
 
-
+# Módulos próprios
 import cartela
 import sorteio
+
 
 cartela_1 = cartela.gerar()
 
 cartela.imprime(cartela_1)
 
-letra_sorteada, numero_sorteado = sorteio.sorteia()
+# Passo 3: 
+for sortear in range(50): 
 
-if cartela.verifica_numero_sorteado(cartela_1, letra_sorteada, numero_sorteado):
+    letra_sorteada, numero_sorteado = sorteio.sorteia()
 
-    cartela_1 = cartela.marca_numero(cartela_1, letra_sorteada, numero_sorteado, "**")
+    if cartela.verifica_numero_sorteado(cartela_1, letra_sorteada, numero_sorteado):
+
+        cartela_1 = cartela.marca_numero(cartela_1, letra_sorteada, numero_sorteado, "**")
 
 cartela.imprime(cartela_1)
+
+cartela.verifica_cartela(cartela_1)
+
+          
+        
+    
+
+
+
+
